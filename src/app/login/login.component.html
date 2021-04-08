@@ -1,0 +1,24 @@
+<div class="container col-md-8 mt-5">
+    <div class="row">
+      <div class="card">
+        <div class="card-header text-center"><i class="fas fa-sign-in-alt mr-4"></i>Login</div>
+        <div class="card-body">
+            <form   >
+              <div class="mb-2">
+                <label for="email" class="form-label" >Email</label>
+                <input [(ngModel)]='loginUserData.email' type="email" name="email" class="form-control"  required>
+              </div>
+              <div class="mb-2">
+                <label for="password" class="form-label">Password</label>
+                <input [(ngModel)]='loginUserData.password' type="password" name="password" class="form-control" >
+              </div>
+              <div class="mb-2">
+                <button (click)= 'logdata()' type="submit"  class="form-control bg-info">submit</button>
+              </div>
+            </form>
+    
+        </div>
+      </div>
+  
+    </div>
+</div>
